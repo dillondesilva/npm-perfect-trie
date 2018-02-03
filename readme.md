@@ -37,20 +37,25 @@ var n = root.find('do');
 console.log(n.getPrefix());
 ```
 
+## About
+A prefix trie is a type of tree data structure which is used to store data usually in the form of strings. Prefix tries allow for the fast and efficient search of data in the trie as they minimise repetition and loss of information.
+
+It is very common to find the use of prefix tries in programs as they can be used to think ahead for the user and save time. An example of where prefix tries are used are in predictive text features in mobile phones. In conclusion, perfect-trie aims to make it easy to create and manipulate your own prefix tries.
+
 ## API
 ### Node ()
 Initialises a new Node class
 
-### getPrefix()
+### .getPrefix()
 Returns the prefix of the specified node
 
-### getChildren()
+### .getChildren()
 Returns any children of the specified node
 
-### isWord()
+### .isWord()
 Returns true if specified node has a complete prefix
 
-### addWord()
+### .addWord()
 Adds the word to the trie and as a result, produces child nodes
 ```js
 var root = new Node ('');
@@ -58,7 +63,7 @@ var root = new Node ('');
 root.addWord('tea');
 ```
 
-### find()
+### .find()
 Returns the node of the given prefix or null if not found
 ```js
 var root = new Node ('');
@@ -68,7 +73,7 @@ root.addWord('tea');
 var node = root.find('te');
 ```
 
-### words()
+### .words()
 Returns an array of words that start with the prefix of the specified node
 
 ## Acknowledgements
