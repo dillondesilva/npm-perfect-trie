@@ -15,6 +15,9 @@ npm install perfect-trie --save
 ```
 
 ## API
+### Node ()
+Initialises a new Node class
+
 ### getPrefix()
 Returns the prefix of the specified node
 
