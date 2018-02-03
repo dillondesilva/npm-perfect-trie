@@ -14,6 +14,29 @@ To install perfect-trie and save it, use the command below:
 npm install perfect-trie --save
 ```
 
+### Usage
+
+The following snippet of code is an example of how to use perfect-trie
+
+```js
+var Node = require('perfect-trie');
+
+// Creating a Node
+var root = new Node('');
+
+// Adding words to trie
+var wordsToAdd = ['dog', 'doll', 'dot'];
+for (var word in wordsToAdd) {
+  root.addWord(wordsToAdd[word]);
+}
+
+// Finding a node starting with a certain prefix
+var n = root.find('do');
+
+// Expected output: 'do'
+console.log(n.getPrefix());
+```
+
 ## API
 ### Node ()
 Initialises a new Node class
