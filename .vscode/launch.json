@@ -1,0 +1,51 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "DebugTests",
+      "type": "node",
+      "request": "launch",
+      "stopOnEntry": false,
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/node_modules/.bin/_mocha",
+      "args": [
+        "-u",
+        "exports",
+        "-R",
+        "spec",
+        "-r",
+        "test/setup.js",
+        "test/*{,*/}*.js"
+      ],
+      "runtimeArgs": [
+        "--nolazy",
+        "--debug-brk"
+      ],
+      "port": 5858,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "internalConsole",
+      "sourceMaps": true
+    },
+    {
+      "name": "Debug",
+      "type": "node",
+      "request": "launch",
+      "stopOnEntry": false,
+      "args": [],
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/src/index.js",
+      "runtimeArgs": [
+        "--nolazy",
+        "--debug-brk"
+      ],
+      "port": 5858,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "internalConsole",
+      "sourceMaps": true
+    }
+  ]
+}
