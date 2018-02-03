@@ -8,10 +8,10 @@ Check out the instructions below for setting up perfect-trie!
 
 ### Installation
 
-To install perfect-trie, use the command below:
+To install prefix-trie and save it, use the command below:
 
 ```
-npm install perfect-trie --save
+npm install prefix-trie --save
 ```
 
 ## API
