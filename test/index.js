@@ -1,5 +1,5 @@
 const assert = require("assert");
-const Node = require("../trie");
+const Node = require("../src");
 
 describe('Tests', () => {
   var root;
