@@ -19,22 +19,26 @@ npm install perfect-trie --save
 The following snippet of code is an example of how to use perfect-trie
 
 ```js
-var Node = require('perfect-trie');
+var Trie = require('perfect-trie');
 
-// Creating a Node
-var root = new Node('');
+var trie = new Trie ('');
 
-// Adding words to trie
-var wordsToAdd = ['dog', 'doll', 'dot'];
-for (var word in wordsToAdd) {
-  root.addWord(wordsToAdd[word]);
+trie.addWord('tea');
+
+var match = trie.find('te');
+
+if (match.success) {
+  if (match.isComplete) {
+    console.log('Found an exact match');
+  } else {
+    console.log('Found following words starting with the matching prefix: ')
+    for (var word in match.words) {
+      console.log(match.words[word]);
+    }
+  }
+} else {
+  console.log('No match found');
 }
-
-// Finding a node starting with a certain prefix
-var n = root.find('do');
-
-// Expected output: 'do'
-console.log(n.getPrefix());
 ```
 
 ## About
@@ -43,38 +47,26 @@ A prefix trie is a type of tree data structure which is used to store data usual
 It is very common to find the use of prefix tries in programs as they can be used to think ahead for the user and save time. An example of where prefix tries are used are in predictive text features in mobile phones. In conclusion, perfect-trie aims to make it easy to create and manipulate your own prefix tries.
 
 ## API
-### Node ()
-Initialises a new Node class
-
-### .getPrefix()
-Returns the prefix of the specified node
-
-### .getChildren()
-Returns any children of the specified node
-
-### .isWord()
-Returns true if specified node has a complete prefix
+### Trie ()
+Initialises a new Trie instance
 
 ### .addWord()
-Adds the word to the trie and as a result, produces child nodes
+Adds a string to the trie
 ```js
-var root = new Node ('');
+var trie = new Trie ('');
 
-root.addWord('tea');
+trie.addWord('tea');
 ```
 
 ### .find()
-Returns the node of the given prefix or null if not found
+Finds a specified string in the trie and returns an object containing the match data
 ```js
-var root = new Node ('');
+var trie = new Trie ('');
 
-root.addWord('tea');
+trie.addWord('nintendo');
 
-var node = root.find('te');
+var match = trie.find('nin');
 ```
-
-### .words()
-Returns an array of words that start with the prefix of the specified node
 
 ## Acknowledgements
 
