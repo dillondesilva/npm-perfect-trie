@@ -71,4 +71,4 @@ var match = trie.find('nin');
 
 ## Acknowledgements
 
-Thank you to @buddyspike for reviewing my documentation
+Thank you to @buddyspike (Ahem, Dad) for reviewing my documentation
