@@ -1,4 +1,5 @@
 # npm-perfect-trie
+>> Easiest Framework to build Prefix Trie Structures
 
 A simple npm package that allows you to build and manipulate a prefix trie
 
@@ -70,4 +71,4 @@ var match = trie.find('nin');
 
 ## Acknowledgements
 
-Thank you to Buddhike de Silva for reviewing my documentation
+Thank you to @buddyspike for reviewing my documentation
