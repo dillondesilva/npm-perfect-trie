@@ -4,6 +4,7 @@
   "description": "",
   "author": "codetilldrop",
   "license": "MIT",
+  "keywords": ["trie", "prefix trie", "perfect", "easy to use"],
   "main": "src/index.js",
   "scripts": {
     "eslint": "eslint --fix src test",

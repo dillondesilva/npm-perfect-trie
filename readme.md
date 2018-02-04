@@ -1,5 +1,5 @@
 # npm-perfect-trie
->> Easiest Framework to build Prefix Trie Structures
+>> Easiest package to build and manipulate prefix trie structures
 
 A simple npm package that allows you to build and manipulate a prefix trie
 
