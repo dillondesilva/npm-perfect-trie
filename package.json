@@ -10,6 +10,9 @@
     "perfect",
     "easy to use"
   ],
+  "repository": {
+    "url": "https://github.com/codetilldrop/npm-perfect-trie"
+  },
   "main": "src/index.js",
   "scripts": {
     "eslint": "eslint --fix src test",
