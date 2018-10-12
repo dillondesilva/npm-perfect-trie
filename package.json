@@ -22,12 +22,12 @@
   },
   "devDependencies": {
     "assert": "^1.4.1",
-    "chai": "^4.1.2",
-    "eslint": "^4.15.0",
+    "chai": "^4.2.0",
+    "eslint": "^4.19.1",
     "istanbul": "^0.4.5",
     "mocha": "^4.1.0",
-    "nodemon": "^1.14.9",
+    "nodemon": "^1.18.4",
     "proxyquire": "^1.8.0",
-    "sinon": "^4.1.4"
+    "sinon": "^4.5.0"
   }
 }
