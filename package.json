@@ -26,7 +26,7 @@
     "eslint": "^4.19.1",
     "istanbul": "^0.4.5",
     "mocha": "^4.1.0",
-    "nodemon": "^1.18.4",
+    "nodemon": "^1.18.7",
     "proxyquire": "^1.8.0",
     "sinon": "^4.5.0"
   }
