@@ -13,6 +13,9 @@
   "repository": {
     "url": "https://github.com/codetilldrop/npm-perfect-trie"
   },
+  "dependencies": {
+    "just-extend": ">=4.0.0"
+  },
   "main": "src/index.js",
   "scripts": {
     "eslint": "eslint --fix src test",
